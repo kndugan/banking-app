@@ -1,3 +1,5 @@
+import { NavLink } from 'react-routher-dom'
+
 function NavBar(){
   return(
     <>
@@ -16,7 +18,7 @@ function NavBar(){
             <ul className="navbar-nav">
 
             <li className="nav-item dropdown">
-                <a className="nav-link" href="#/CreateAccount/">CreateAccount</a>
+                <a className="nav-link"><NavLink to="#/CreateAccount">CreateAccount</NavLink></a>
 
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a className="dropdown-item">Create an Account</a></li>
@@ -63,6 +65,7 @@ function NavBar(){
           </div>
         </div>
       </nav>
+ 
 
     </>
   );
