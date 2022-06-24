@@ -21,7 +21,7 @@
 
 /* NavBar Active Page Customizations */
 .nav-item a {
-    color: #fff;
+    color: blue;
 }
 .nav-item.active a {
     color: red;
