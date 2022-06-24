@@ -22,7 +22,6 @@ function NavBar(){
                   <li><a className="dropdown-item">Create an Account</a></li>
                 </ul>
               </li>
-
               {/* <li className="nav-item">
                 <a className="nav-link" aria-current="page" href="#/login/">Login</a>
               </li> */}
