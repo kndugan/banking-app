@@ -11,8 +11,12 @@
     margin-top: -5px;
 }
 
+.navbar-collapse {
+    margin-right: 70px;
+}
+
 .mynav a {
-    margin-right: 15px; 
+    margin-right: 30px; 
     border-bottom: 2px solid transparent;
 }
 
@@ -24,4 +28,14 @@
     border-bottom: 2px solid #fff;
     color: #fff;
 } 
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    color: #000;
+    margin: 0; 
+ }
+
+ .dropdown-menu a:hover {
+    background: transparent;
+ }
 
