@@ -20,6 +20,11 @@
     border-bottom: 2px solid #fff;
 }
 
+.mynav a:focus {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}   
+
 .active a {
     border-bottom: 2px solid #fff;
 }
