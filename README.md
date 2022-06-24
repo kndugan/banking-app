@@ -2,7 +2,7 @@
 
 ## Navigation Bar
 
-~~Includes Create Account, Deposit, Withdraw, All Data, and Home pages~~
+~~ • Includes Create Account, Deposit, Withdraw, All Data, and Home pages~~
 
 ~~Routing: Each navigation bar item routes the user to the relevant page. For example, by selecting Home the user should be directed to the Home page.~~
 
