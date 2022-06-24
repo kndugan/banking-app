@@ -4,7 +4,7 @@ function Home(){
   const email = ctx.users[0].email;
 
   const welcomeMessage = "Welcome to the Bank " + name + "!";
-  const textMessage ="You can move around using the navigation bar.";
+  const textMessage ="We are here for all of your banking needs. You can move around using the navigation bar.";
   
 
   return (
@@ -12,7 +12,7 @@ function Home(){
       <Card 
         bgcolor="light"
         txtcolor="black"
-        header="BadBank Landing Page"
+        header=" "
         title={welcomeMessage}
         text={textMessage}
         body={(<img src="bank.png" className="img-fluid" alt="Responsive image"/>)}
