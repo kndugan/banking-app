@@ -1,7 +1,10 @@
+/* Bootstrap Card Margins */
 .card {
     margin: 20px;
 }
 
+
+/* NavBar */
 .mynav {
     background: #fff; 
 }
@@ -15,6 +18,18 @@
     margin-right: 70px;
 }
 
+
+/* NavBar Active Page Customizations */
+.nav-item a {
+    color: blue;
+}
+
+.nav-item.active a {
+    color: red;
+}
+
+
+/* NavBar Hover Customizations */
 .mynav a {
     margin-right: 30px; 
     border-bottom: 2px solid transparent;
@@ -29,6 +44,8 @@
     color: #fff;
 } 
 
+
+/* NavBar Dropdown Descriptions */
 .dropdown:hover .dropdown-menu {
     display: block;
     color: #000;
