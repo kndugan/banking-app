@@ -4,6 +4,9 @@
     margin-top: 40px;
 }
 
+.card-header {
+    font-weight: bold;
+}
 
 /* NavBar */
 .mynav {
@@ -65,3 +68,11 @@
     background: transparent;
  }
 
+
+
+ .mycard {
+    width: 500px;
+    margin-left: 80px;
+    
+    
+ }

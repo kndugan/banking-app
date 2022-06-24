@@ -1,5 +1,5 @@
 const Route       = ReactRouterDOM.Route;
-const NavLink        = ReactRouterDOM.NavLink;
+const Link        = ReactRouterDOM.Link;
 const HashRouter  = ReactRouterDOM.HashRouter;
 const UserContext = React.createContext(null);
 

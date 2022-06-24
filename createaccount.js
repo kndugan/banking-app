@@ -8,7 +8,7 @@ function CreateAccount(){
 
   function validate(field, label){
     if (!field) {
-      setStatus('Error: ' + label);
+      setStatus('Error: Please enter a valid ' + label);
       setTimeout(() => setStatus(''), 3000);
       return false; 
     } 
@@ -43,7 +43,7 @@ function CreateAccount(){
         Name<br/>
         <input type="input" className="form-control" id="name" placeholder="Enter Name" value={name} onChange={e => setName(e.currentTarget.value)} /><br/>
         Email Address<br/>
-        <input type="input" className="form-control" id="email" placeholder="Enter Email" value={email} onChange={e => setEmail(e.currentTarget.value)} /><br/>
+        <input type="email" className="form-control" id="email" placeholder="Enter Email" value={email} onChange={e => setEmail(e.currentTarget.value)} /><br/>
         Password<br/>
         <input type="password" className="form-control" id="password" placeholder="Enter Password" value={password} onChange={e => setPassword(e.currentTarget.value)} /><br/>
         <button type="submit" className="btn btn-dark" onClick={handleCreate}>Create Account</button>
