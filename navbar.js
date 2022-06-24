@@ -4,7 +4,7 @@ function NavBar(){
    
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark mynav">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">BadBank</a>
+          <a className="navbar-brand" href="#">BadBank</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -12,7 +12,7 @@ function NavBar(){
             <ul className="navbar-nav">
 
             <li className="nav-item dropdown">
-                <a className="nav-link" href="#/CreateAccount/" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">CreateAccount</a>
+                <a className="nav-link" href="#/CreateAccount/">CreateAccount</a>
 
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a className="dropdown-item">Create an Account</a></li>
@@ -24,7 +24,7 @@ function NavBar(){
               </li> */}
 
               <li className="nav-item dropdown">
-                <a className="nav-link" href="#/deposit/" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Deposit</a>
+                <a className="nav-link" href="#/deposit/">Deposit</a>
 
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a className="dropdown-item">Make a Deposit</a></li>
@@ -32,7 +32,7 @@ function NavBar(){
               </li>
               
               <li className="nav-item dropdown">
-                <a className="nav-link" href="#/withdraw/" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Withdraw</a>
+                <a className="nav-link" href="#/withdraw/">Withdraw</a>
 
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a className="dropdown-item">Withdraw Funds</a></li>
@@ -48,7 +48,7 @@ function NavBar(){
               </li> */}
               
               <li className="nav-item dropdown">
-                <a className="nav-link" href="#/alldata" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">AllData</a>
+                <a className="nav-link" href="#/alldata">AllData</a>
 
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a className="dropdown-item">View Data</a></li>
