@@ -3,9 +3,13 @@
 ## Navigation Bar
 
 ~~Includes Create Account, Deposit, Withdraw, All Data, and Home pages~~
+
 ~~Routing: Each navigation bar item routes the user to the relevant page. For example, by selecting Home the user should be directed to the Home page.~~
+
 ~~Styled with Bootstrap~~
+
 Highlighting: Each navigation bar item is highlight when you are on that page. For example, Home is highlighted when you are on the home page.~~
+
 ~~Hover effect: When your mouse hovers over a navigation bar item, you see a pop up with a description of that page.~~
 
 ## Home Page
