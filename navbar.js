@@ -8,7 +8,7 @@ function NavBar(){
           <li className="nav-item dropdown">
           <a className="navbar-brand active" href="#">BadBank</a>
              <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a className="dropdown-item">Home</a></li>
+                <li><a className="dropdown-item">   Home</a></li>
               </ul>
           </li>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

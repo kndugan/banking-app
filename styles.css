@@ -10,7 +10,6 @@
 }
 
 .navbar-brand {
-    
     margin-top: -5px;
 }
 
@@ -20,26 +19,26 @@
 
 
 /* NavBar Active Page Customizations */
-.nav-item a {
+/* .nav-item a {
     color: blue;
 }
 .nav-item.active a {
     color: red;
-}
+} */
 
 
 /* NavBar Hover Customizations */
 .mynav a {
     margin-right: 30px; 
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
 }
 
 .mynav a:hover {
-    border-bottom: 2px solid #fff;
+    border-bottom: 3px solid #fff;
 }
 
 .mynav a:focus {
-    border-bottom: 2px solid #fff;
+    border-bottom: 3px solid #fff;
     color: #fff;
 } 
 
@@ -49,7 +48,10 @@
     display: block;
     color: #000;
     margin: 0; 
- }
+    background: transparent;
+    border: transparent;
+    margin-left: -8px;
+}
 
  .dropdown-menu a:hover {
     background: transparent;
