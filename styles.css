@@ -20,15 +20,12 @@
 
 
 /* NavBar Active Page Customizations */
-nav a.active {
-    color: red !important; 
-}
-/* .nav-item a {
+.nav-item a {
     color: blue;
 }
 .nav-item.active a {
     color: red;
-} */
+}
 
 
 /* NavBar Hover Customizations */
