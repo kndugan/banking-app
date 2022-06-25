@@ -3,9 +3,14 @@ function CreateAccount(){
   const [status, setStatus]     = React.useState(''); 
   const [name, setName]         = React.useState(''); 
   const [email, setEmail]       = React.useState(''); 
-  const [password, setPassword] = React.useState(''); 
+  const [password, setPassword] = React.useState('');
+  // const [errors, setError]      = React.useState({nameError:'',emailError:'',passwordError:''}); 
   const ctx = React.useContext(UserContext);
 
+  // function validate() {
+  //   if(!name) setError({...errors, nameError: 'Please enter your name'})
+  // } 
+  
   function validate(field, label){
     if (!field) {
       setStatus('Error: Please enter a valid ' + label);
@@ -13,9 +18,13 @@ function CreateAccount(){
       return false; 
     } 
     return true; 
+    
   }
 
-  
+  // function validatePassword() {
+  //   if (password.length < 8) {
+  //     return "Error: Password length needs to be at least 8 characters"
+  // } return null; 
 
   function handleCreate(){
     console.log(name,email,password); 
@@ -39,16 +48,42 @@ function CreateAccount(){
       bgcolor="light"
       txtcolor="black"
       header="Create Account"
+
       status={status}
       body={show ? (
         <>
-        Name<br/>
-        <input type="input" className="form-control" id="name"  placeholder="Enter Name" value={name} onChange={e => setName(e.currentTarget.value)} /><br/>
-        Email Address<br/>
-        <input type="email" className="form-control" id="email" placeholder="Enter Email" value={email} onChange={e => setEmail(e.currentTarget.value)} /><br/>
-        Password<br/>
-        <input type="password" className="form-control" id="password" placeholder="Enter Password" value={password} onChange={e => setPassword(e.currentTarget.value)} /><br/>
+        <div>To create an account, all fields must be filled and password must be at least 8 characters.</div><br/>
+        <div>Name</div>
+        <input 
+          type="input" 
+          className="form-control" 
+          id="name"  
+          placeholder="Enter Name" 
+          value={name} 
+          onChange={e => setName(e.currentTarget.value)} /><br/>
+        {/* <div style={{color: 'red'}}>{errors.nameError}</div><br/> */}
+        <div>Email Address</div>
+        <input 
+          type="email" 
+          className="form-control" 
+          id="email" 
+          placeholder="Enter Email" 
+          value={email} 
+          onChange={e => setEmail(e.currentTarget.value)} /><br/>
+        {/* <div style={{color: 'red'}}>{errors.emailError}</div><br/> */}
+
+        <div>Password</div>
+        <input 
+          type="password" 
+          className="form-control" 
+          id="password" 
+          placeholder="Enter Password" 
+          value={password} 
+          onChange={e => setPassword(e.currentTarget.value)} /><br/>
+        {/* <div style={{color: 'red'}}>{validatePassword}</div><br/> */}
+
         <button type="submit" className="btn btn-dark" onClick={handleCreate}>Create Account</button>
+        
         </>
       
       ) : (
