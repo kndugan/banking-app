@@ -70,8 +70,19 @@
 
 
 
- .mycard {
+ .datacard {
     width: 500px;
-    margin-left: 80px;
+    margin-left: 145px;
+ }
+
+ .depositcard {
+    width: 500px;
+    margin-left: 145px;
+    line-height: 30px;
+    
+ }
+
+ .depositcard button {
+    margin-top: 10px;
  }
 

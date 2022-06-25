@@ -9,14 +9,15 @@ function Deposit(){
   const ctx = React.useContext(UserContext);
   
   
+  
     return (
-      <label className="label huge">
-        <h1>Deposit</h1>
-          <>
+      <label className="label huge card bg-light depositcard">
+        <div className="card-header">Deposit Into Your Account</div>
+          <div className="card-body">
             <h5>{balanceMessage}</h5>
-            <input type="number" id="deposit" value={deposit} placeholder="Enter Deposit Amount"></input>
-            <div><button>Submit</button></div>
-          </>
+            <div><input type="number" placeholder="Enter Deposit Amount"></input></div>
+            <div><button type="submit" className="btn btn-dark">Submit</button></div>
+          </div>
        
         {/* <Card 
         bgcolor="success"

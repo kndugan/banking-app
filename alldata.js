@@ -3,7 +3,7 @@ function AllData(){
     console.log(JSON.stringify(ctx))
 
   return (
-    <div className="card mycard">
+    <div className="card datacard">
       <div className="card-header">
         All Data
       </div>
