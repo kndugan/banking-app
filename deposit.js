@@ -5,34 +5,18 @@ function Deposit(){
   const [deposit, setDeposit]  = React.useState(''); 
 
 
-  const balanceMessage = "Current Balance: $" + balance;
-  const newBalanceMessage ="New Balance: $" + balance + deposit;
+  const balanceMessage = "Account Balance: $" + balance;
   const ctx = React.useContext(UserContext);
   
-  let transactionState = 0; //state of transaction
-  let totalState = balance; 
   
-  const handleChange = value => {
-    console.log(`handleChange ${value}`);
-    transactionState = Number(value);
-  }
-
-  const handleSubmit = () => {
-    balance += transactionState; 
-    status = `New Account Balance $ ${totalState}`
-  }
-  
-  return (
-    <div className="container">
-      <h1>Deposit</h1>
-        <>
-        <h5>{balanceMessage}</h5>
-        <input type="number" id="deposit" value={deposit} placeholder="Enter Deposit Amount"></input>
-        <div><button>Submit</button></div>
-        <h5>{newBalanceMessage}</h5>
-        
-        
-        </>
+    return (
+      <label className="label huge">
+        <h1>Deposit</h1>
+          <>
+            <h5>{balanceMessage}</h5>
+            <input type="number" id="deposit" value={deposit} placeholder="Enter Deposit Amount"></input>
+            <div><button>Submit</button></div>
+          </>
        
         {/* <Card 
         bgcolor="success"
@@ -42,9 +26,25 @@ function Deposit(){
         body="Deposit Amount"
        
         /> */}
-    </div>
+    </label>
   )
 }
+
+//    let transactionState = 0; //state of transaction 
+//   let totalState = balance; 
+//   const handleChange = value => {
+//   console.log(`handleChange ${value}`);
+//   transactionState = Number(value);
+// }
+
+// const handleSubmit = () => {
+//   balance += transactionState; 
+//   status = `New Account Balance $ ${totalState}`
+// }
+
+
+
+//from ATM Exercise Week 15
 
 // const ATMDeposit = ({ onChange, isDeposit, isValid }) => {
 //   const choice = ['Deposit', 'Cash Back'];
@@ -60,6 +60,8 @@ function Deposit(){
 
 // const Account = () => {
 //   // let deposit = 0; // state of this transaction
+//   // const [show, setShow]        = React.useState(true);
+//   const [balance, setBalance]  = React.useState('100');
 //   const [deposit, setDeposit] = React.useState(0);
 //   const [totalState, setTotalState] = React.useState(0);
 //   const [isDeposit, setIsDeposit] = React.useState(true);
@@ -99,27 +101,29 @@ function Deposit(){
 //   }
 
 //   return (
-//     <form onSubmit={handleSubmit}>
-//       <>
-//         <h2 id="total">{status}</h2>
-//         <label>Select an action below to continue</label>
-//         <select onChange={(e) => handleModeSelect(e)} name="mode" id="mode-select">
-//           <option id="no-selection" value=""></option>
-//           <option id="deposit-selection" value="Deposit">
-//             Deposit
-//           </option>
-//           <option id="cashback-selection" value="Cash Back">
-//             Cash Back
-//           </option>
-//         </select>
-//         {atmMode && (
-//           <ATMDeposit
-//             onChange={handleChange}
-//             isDeposit={isDeposit}
-//             isValid={validTransaction}
-//           ></ATMDeposit>
-//         )}
-//       </>
-//     </form>
+//     <div className="container">
+//       <form onSubmit={handleSubmit}>
+//         <>
+//           <h2 id="total">{status}</h2>
+//           <label>Select an action below to continue</label>
+//           <select onChange={(e) => handleModeSelect(e)} name="mode" id="mode-select">
+//             <option id="no-selection" value=""></option>
+//             <option id="deposit-selection" value="Deposit">
+//               Deposit
+//             </option>
+//             <option id="cashback-selection" value="Cash Back">
+//               Cash Back
+//             </option>
+//           </select>
+//           {atmMode && (
+//             <ATMDeposit
+//               onChange={handleChange}
+//               isDeposit={isDeposit}
+//               isValid={validTransaction}
+//             ></ATMDeposit>
+//           )}
+//         </>
+//       </form>
+//     </div>
 //   );
 // };
