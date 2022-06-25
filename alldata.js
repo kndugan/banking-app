@@ -21,7 +21,7 @@ function AllData(){
             <td>{ctx.users[0].email}</td>
             <td>{ctx.users[0].password}</td>
           </tr>
-          {/* <tr>
+          <tr>
             <td>{ctx.users[1].name}</td>
             <td>{ctx.users[1].email}</td>
             <td>{ctx.users[1].password}</td>
@@ -30,7 +30,7 @@ function AllData(){
             <td>{ctx.users[2].name}</td>
             <td>{ctx.users[2].email}</td>
             <td>{ctx.users[2].password}</td>
-          </tr> */}
+          </tr>
         </tbody>
       </table>
     </div>
