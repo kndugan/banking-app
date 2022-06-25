@@ -10,9 +10,9 @@ function AllData(){
       <table className="card-table table">
         <thead>
           <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Password</th>
+            <th data-field="name" scope="col">Name</th>
+            <th data-field="email" scope="col">Email</th>
+            <th data-field="password" scope="col">Password</th>
           </tr>
         </thead>
         <tbody>
