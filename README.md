@@ -2,13 +2,13 @@
 
 ## Navigation Bar
 
+1. Highlighting: Each navigation bar item is highlight when you are on that page. For example, Home is highlighted when you are on the home page.
+
 ~~Includes Create Account, Deposit, Withdraw, All Data, and Home pages~~
 
 ~~Routing: Each navigation bar item routes the user to the relevant page. For example, by selecting Home the user should be directed to the Home page.~~
 
 ~~Styled with Bootstrap~~
-
-1. Highlighting: Each navigation bar item is highlight when you are on that page. For example, Home is highlighted when you are on the home page.
 
 ~~Hover effect: When your mouse hovers over a navigation bar item, you see a pop up with a description of that page.~~
 
@@ -34,6 +34,10 @@
 
 Create account page should include the following functionality:
 
+1. Password validation: The user receives an alert if the password is less than 8 characters long.
+
+2. Disable submit button if nothing is inputted
+
 ~~Success message: Upon selecting the create account button the user should see a success message.~~
 
 ~~Add Another Account Button: Upon selecting the create account button, the user should see an add another account button.~~
@@ -44,13 +48,9 @@ Create account page should include the following functionality:
 
 ~~Email validation: The user receives an alert if this field is blank~~
 
-1. Password validation: The user receives an alert if the password is less than 8 characters long.
-
-2. Disable submit button if nothing is inputted
-
 ## Deposit Page
 
-~~Includes a Bootstrap card with a form that has:~~
+Includes a Bootstrap card with a form that has:
 
 1. Deposit input field
 2. Deposit button
@@ -68,7 +68,7 @@ Deposit page should include the following functionality:
 
 ## Withdraw Page
 
-~~Includes a Bootstrap card with a form that has:~~
+Includes a Bootstrap card with a form that has:
 
 1. Withdraw input field
 2. Withdraw button
@@ -86,7 +86,7 @@ Withdraw page should include the following functionality:
 
 ### All Data Page Functionality
 
-~~All Data page includes the following functionality:~~
+All Data page includes the following functionality:
 
 1. Track User Submissions: All user submissions appear on All Data page.
 2. All Data Displayed On Bootstrap Card: All Data is styled and displayed on a Bootstrap card instead of JSON.
