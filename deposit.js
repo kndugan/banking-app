@@ -4,20 +4,17 @@ function Deposit(){
   const [balance, setBalance]  = React.useState('100'); 
   const [deposit, setDeposit]  = React.useState(''); 
 
-
   const balanceMessage = "Account Balance: $" + balance;
   const ctx = React.useContext(UserContext);
   
-  
-  
     return (
-      <label className="label huge card bg-light depositcard">
-        <div className="card-header">Deposit Into Your Account</div>
-          <div className="card-body">
+      <label className="label huge card bg-success depositcard">
+        <div>Deposit</div>
+          <>
             <h5>{balanceMessage}</h5>
-            <div><input type="number" placeholder="Enter Deposit Amount"></input></div>
-            <div><button type="submit" className="btn btn-dark">Submit</button></div>
-          </div>
+            <input type="number" placeholder="Enter Deposit Amount"></input>
+            <button type="submit" value="submit" className="btn btn-dark">Submit</button>
+          </>
        
         {/* <Card 
         bgcolor="success"

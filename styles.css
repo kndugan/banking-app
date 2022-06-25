@@ -79,10 +79,12 @@
     width: 500px;
     margin-left: 145px;
     line-height: 30px;
+    padding: 10px;
     
  }
 
  .depositcard button {
     margin-top: 10px;
+    width: 200px;
  }
 
