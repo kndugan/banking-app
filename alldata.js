@@ -13,10 +13,23 @@ function AllData(){
             <th data-field="name" scope="col">Name</th>
             <th data-field="email" scope="col">Email</th>
             <th data-field="password" scope="col">Password</th>
+            <th data-field="balance" scope="col">Balance</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
+          {
+            ctx.users.map((user, i)=>{
+              return(
+                <tr  key={i}>
+                <td>{user.name}</td>
+                <td>{user.email}</td>
+                <td>{user.password}</td>
+                <td>${user.balance}</td>
+                </tr>
+              )
+            })
+          }
+          {/* <tr>
             <td>{ctx.users[0].name}</td>
             <td>{ctx.users[0].email}</td>
             <td>{ctx.users[0].password}</td>
@@ -30,24 +43,10 @@ function AllData(){
             <td>{ctx.users[2].name}</td>
             <td>{ctx.users[2].email}</td>
             <td>{ctx.users[2].password}</td>
-          </tr>
+          </tr> */}
         </tbody>
       </table>
     </div>
-
-      
-      
-  
-
-        // <Card 
-        // bgcolor="secondary"
-        // txtcolor="white"
-        // header="All Data"
-        // body={JSON.stringify(ctx)}
-        // />
-
-        
-    
   )
   
 }

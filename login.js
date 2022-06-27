@@ -12,7 +12,7 @@ function Login(){
       return false; 
     } 
     return true; 
-  }
+  };
 
   function handleCreate(){
     console.log(email,password); 
@@ -20,13 +20,13 @@ function Login(){
     if (!validate(password, 'Password'))  return; 
     ctx.users.push({email,password});
     setShow(false);
-  }
+  };
 
   function clearForm() {
     setEmail('');
     setPassword('');
     setShow(true);
-  }
+  };
 
   return (
     <div className="container">
@@ -39,6 +39,7 @@ function Login(){
       <>
       Email Address<br/>
       <input type="email" className="form-control" id="email" placeholder="Enter Email" value={email} onChange={e => setEmail(e.currentTarget.value)} /><br/>
+      
       Password<br/>
       <input type="password" className="form-control" id="password" placeholder="Enter Password" value={password} onChange={e => setPassword(e.currentTarget.value)} /><br/>
       <button type="submit" className="btn btn-dark" onClick={handleCreate}>Login</button>

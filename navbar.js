@@ -22,9 +22,6 @@ function NavBar(){
                   <li><a className="dropdown-item">Create an Account</a></li>
                 </ul>
               </li>
-              {/* <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#/login/">Login</a>
-              </li> */}
 
               <li className="nav-item dropdown">
                 <a className="nav-link" href="#/deposit/">Deposit</a>
@@ -41,14 +38,6 @@ function NavBar(){
                   <li><a className="dropdown-item">Withdraw Funds</a></li>
                 </ul>
               </li>
-
-              {/* <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Balance</a>
-
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a className="dropdown-item" href="#/balance/">View Your Balance</a></li>
-                </ul>
-              </li> */}
               
               <li className="nav-item dropdown">
                 <a className="nav-link" href="#/alldata">AllData</a>

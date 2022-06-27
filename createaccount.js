@@ -21,16 +21,21 @@ function CreateAccount(){
     
   }
 
-  // function validatePassword() {
-  //   if (password.length < 8) {
-  //     return "Error: Password length needs to be at least 8 characters"
-  // } return null; 
+  function validatePassword(field, label) {
+    if (password.length < 8) {
+      setStatus("Error: Password length needs to be at least 8 characters")
+      setTimeout(() => setStatus(''), 5000);
+      return false; 
+    } 
+  return true; 
+  };
 
   function handleCreate(){
     console.log(name,email,password); 
     if (!validate(name,     'name'))      return; 
     if (!validate(email,    'email'))     return; 
     if (!validate(password, 'password'))  return; 
+    if (!validatePassword(password, 'password'))  return; 
     ctx.users.push({name,email,password,balance:100});
     setShow(false);
   }
@@ -82,7 +87,7 @@ function CreateAccount(){
           onChange={e => setPassword(e.currentTarget.value)} /><br/>
         {/* <div style={{color: 'red'}}>{validatePassword}</div><br/> */}
 
-        <button type="submit" className="btn btn-dark" onClick={handleCreate}>Create Account</button>
+        <button type="submit" className="btn btn-dark" disabled = {!name || !email || !password} onClick={handleCreate}>Create Account</button>
         
         </>
       
