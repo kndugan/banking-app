@@ -1,32 +1,82 @@
 function Deposit(){
-  const [show, setShow]        = React.useState(true); 
-  const [status, setStatus]    = React.useState(''); 
-  const [balance, setBalance]  = React.useState('100'); 
-  const [deposit, setDeposit]  = React.useState(''); 
+  const [show, setShow]         = React.useState(true);
+  const [status, setStatus]    = React.useState("");
+  const [amount, setAmount]     = React.useState(0);
+  const ctx = React.useContext(UserContext);  
 
-  const balanceMessage = "Account Balance: $" + balance;
-  const ctx = React.useContext(UserContext);
-  
-    return (
-      <label className="label huge card bg-success depositcard">
-        <div>Deposit</div>
-          <>
-            <h5>{balanceMessage}</h5>
-            <input type="number" placeholder="Enter Deposit Amount"></input>
-            <button type="submit" value="submit" className="btn btn-dark">Submit</button>
-          </>
-       
-        {/* <Card 
+  function validate(field, label){
+      if (!field) {
+        setStatus('Error: ' + label);
+        setTimeout(() => setStatus(''),3000);
+        return false;
+      }
+      return true;
+  }
+
+  function handleCreate(){
+    console.log(amount);
+    if (!validate(amount, 'amount')) return;
+    
+    let oldAmount= Number(ctx.users[ctx.users.length-1].balance);
+    console.log(oldAmount);
+    let newAmount= oldAmount+Number(amount);
+    ctx.users[ctx.users.length-1].balance= newAmount;
+    setShow(false);
+  }    
+
+  function clearForm(){
+    setAmount(0);
+    setShow(true);
+  }
+
+  return (
+    <div className="container">
+      <Card 
         bgcolor="success"
-        txtcolor="white"
         header="Deposit"
-        text={balanceMessage}
-        body="Deposit Amount"
-       
-        /> */}
-    </label>
+        status={status}
+        body={show ? (  
+                <>
+                Balance: $<brk/>
+        {JSON.stringify( ctx.users[ctx.users.length-1].balance)}<brk/>
+        <br/>
+                Amount<br/>
+                <input type="number" className="form-control" id="amount" placeholder="Deposit Amount" value={amount} onChange={e => setAmount(e.currentTarget.value)}/><br/>
+                <button type="submit" className="btn btn-light" onClick={handleCreate}>Submit</button>
+                </>
+              ):(
+                <>
+                <h5>Success</h5>
+                <button type="submit" className="btn btn-light" onClick={clearForm}>Add another deposit</button>
+                </>
+              )}
+      />
+    </div>
   )
 }
+
+
+
+//     return (
+//       <label className="label huge card bg-success depositcard">
+//         <div>Deposit</div>
+//           <>
+//             <h5>{balanceMessage}</h5>
+//             <input type="number" placeholder="Enter Deposit Amount"></input>
+//             <button type="submit" value="submit" className="btn btn-dark">Submit</button>
+//           </>
+       
+//         {/* <Card 
+//         bgcolor="success"
+//         txtcolor="white"
+//         header="Deposit"
+//         text={balanceMessage}
+//         body="Deposit Amount"
+       
+//         /> */}
+//     </label>
+//   )
+// }
 
 //    let transactionState = 0; //state of transaction 
 //   let totalState = balance; 
